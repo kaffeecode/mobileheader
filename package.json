@@ -1,0 +1,19 @@
+{
+  "name": "kc-mobile-header",
+  "version": "0.0.1",
+  "description": "autoremove header plugin for jquery",
+  "main": "mobileHeader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/kaffeecode/mobileheader.git"
+  },
+  "keywords": [
+    "header"
+  ],
+  "author": "2pix",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/kaffeecode/mobileheader#readme"
+}
