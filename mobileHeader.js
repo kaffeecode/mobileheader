@@ -17,6 +17,9 @@
       const isAnimated = $this.is(':animated');
       const isDown = scrollTop > lastScrollTop;
 
+      if(window.innerWidth >= 768)
+        return;
+
       if(isDown === !isLastDown)
         startScrollTop = scrollTop;
       else if(!isAnimated) {
