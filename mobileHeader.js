@@ -56,8 +56,6 @@
           {complete: ()=>
             element.css('display', 'none')
         });
-        element.children('nav.slide-nav')
-          .toggleClass('expanded', false);
       }
     });
   };
