@@ -19,7 +19,7 @@
 
       if(isDown === !isLastDown)
         startScrollTop = scrollTop;
-      else if(!isAnimated window.innerWidth <= 768) {
+      else if(!isAnimated && window.innerWidth <= 768) {
         const scrollDistance = scrollTop - startScrollTop;
 
         if(isDown) {
