@@ -21,8 +21,7 @@
         startScrollTop = scrollTop;
       else if(!isAnimated && window.innerWidth <= 768) {
         const scrollDistance = scrollTop - startScrollTop;
-
-        $this.css('display','block');
+        
         if(isDown) {
           if(scrollDistance > delay)
             hide($this);
