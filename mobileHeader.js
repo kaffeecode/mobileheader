@@ -11,6 +11,9 @@
     let startScrollTop = 0;
     let isLastDown = false;
 
+    if(window.innerWidth >= 768)
+      return $this.css('display','none');
+
     $(window).on('scroll.mobileHeader', ()=> {
       const scrollTop = $(window).scrollTop();
       const offset = pointer || window.innerHeight / 3;
@@ -19,7 +22,7 @@
 
       if(isDown === !isLastDown)
         startScrollTop = scrollTop;
-      else if(!isAnimated && window.innerWidth <= 768) {
+      else if(!isAnimated) {
         const scrollDistance = scrollTop - startScrollTop;
 
         if(isDown) {
